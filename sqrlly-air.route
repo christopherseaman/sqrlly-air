@@ -1,0 +1,10 @@
+curl -X POST "https://api.cloudflare.com/client/v4/zones/2b00278f8baa9fb70a84b335674c610f/workers/routes" \
+     -H "Authorization: Bearer API_TOKEN_HERE" \
+     -H "Content-Type: application/json" \
+     --data '{"pattern":"PATTERN.sqrl.ly/*","script":"sqrlly-WORKER"}'
+
+
+     
+curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+     -H "Authorization: Bearer API_TOKEN_HERE" \
+     -H "Content-Type:application/json"
